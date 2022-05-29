@@ -1,0 +1,25 @@
+ion-content {
+    --background: #E0D8C4;
+}
+.profile-img{
+    padding: 5px;
+    border-radius: 50%;
+    height: 155px;
+    width: 155px;
+    border: 2px solid #1a222f;
+}
+.container {
+    background-color: #1a222f;
+    padding: 40px 30px 5px 30px;
+    border-radius: 55px 55px 0px 0px;
+}
+.input-field{
+    border: 2px solid #ff6e50;
+    border-radius: 25px;
+    background: #36343585;
+    height: 52px;
+    margin-bottom: 20px;
+    color: black;
+    --background: #D6E2E3;
+    --ion-color-base: transparent !important;
+}

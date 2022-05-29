@@ -1,0 +1,43 @@
+ion-content {
+    --background: #E0D8C4;
+}
+.main-container {
+    background-color: #1A222F;
+    padding: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 45px 45px 0px 0px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.font-style {
+    color: grey;
+    font-size: 13px;
+    margin: 0px;
+}
+.content-text {
+    color: grey;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.bottom-button-left {
+    width: 135px;
+    background-color: #ff6e50;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    margin: 0px;
+}
+.bottom-button-right {
+    width: 135px;
+    background-color: #ff6e50;
+    padding: 10px 0px 10px 40px;
+    border-radius: 20px 0px 0px 20px;
+    margin: 0px;
+}
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }

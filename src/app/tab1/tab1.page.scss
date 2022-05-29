@@ -1,0 +1,33 @@
+ion-content {
+    --background: #1A222F;
+}
+ion-slides{
+    margin: 10px; 
+    border-radius: 10px; 
+    background-color: #E0D8C4; 
+}
+.rate-tag {
+    background-color: #1a222f;
+    padding: 7px 30px;
+    border-radius: 0px 20px 20px 0px;
+    color: #FF6E50;
+    font-weight: 600;
+    position: relative;
+    right: 11px;
+    width: 100px;
+    margin: 8px 0px;
+}
+.rating-tag {
+    background-color: #ff6e50;
+    border-radius: 10px 0px 0px 10px;
+    padding: 3px;
+    position: relative;
+    float: right;
+    bottom: 43px;
+    left: 10px;
+}
+.description-tag {
+    font-size: 13px;
+    color: grey;
+    margin: 0px;
+}

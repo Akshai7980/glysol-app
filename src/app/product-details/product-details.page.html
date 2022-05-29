@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button style="color: white" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="position: relative;right: 20px;">PRODUCT DETAILS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="ProductInfo">
+
+  <div style="text-align: center; height: 300px; padding: 20px;">
+    <img [src]="ProductInfo.image" alt="" style="height: 250px; border-radius: 15px;">
+  </div>
+
+  <div class="main-container">
+
+    <div class="container">
+
+      <div>
+        <h4> {{ProductInfo.title}} </h4>
+        <p class="font-style"> {{ProductInfo.description}} </p>
+      </div>
+  
+      <div>
+        <p class="font-style"> {{ProductInfo.rating}} </p>
+        <p style="color: #ff6e50;"> {{ProductInfo.rate}} </p>
+      </div>
+
+    </div>
+
+  <p style="color: white; font-size: 13px; margin: 0px;">Color Variations - {{ProductInfo.color}} </p>
+
+  <div>
+    <p class="content-text"> {{ProductInfo.product_details}} </p>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+    <div class="ion-activatable ripple-parent" style="height: 43px;" (click)="AddToBag($event,p)">
+      <p class="bottom-button-left">Add To Bag</p> 
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </div>
+
+    <div class="ion-activatable ripple-parent" style="height: 43px;" (click)="ToBuyNow($event,p)">
+      <p class="bottom-button-right">Buy Now</p>
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </div>
+
+  </div>
+
+</div>
+
+</ion-content>

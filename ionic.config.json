@@ -1,0 +1,8 @@
+{
+  "name": "glysol",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

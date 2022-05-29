@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons style="position: absolute; color: white; bottom: 5px;">
+      <ion-menu-button class="Hamburg_icon"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides loop="true" pager="true" [options]="slideOpts" class="animate__animated animate__fadeIn">
+
+      <ion-slide>
+        <img src="../../assets/images/0_FL1SdSeDgciFUztA.jpg" alt="">
+      </ion-slide>
+
+      <ion-slide style="height: revert;">
+        <img src="../../assets/images/3_banner_3080x806.png" alt="">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/images/NIVEA-Body-Care-Beiersdorf.png" alt="">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/images/0_FL1SdSeDgciFUztA.jpg" alt="">
+      </ion-slide>
+
+      <ion-slide style="height: revert;">
+        <img src="../../assets/images/3_banner_3080x806.png" alt="">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/images/NIVEA-Body-Care-Beiersdorf.png" alt="">
+      </ion-slide>
+
+  </ion-slides>
+
+  <div style="display: flex; margin-top: 30px; justify-content: center;">
+
+    <div>
+      <div *ngFor="let p of ProductDetails" style="width: 165px; height: auto; padding: 10px; border-radius: 10px; margin: 10px; background-color: #E0D8C4;" (click)="gotoProductDetails($event,p)">
+        <img [src]="p.image" alt="" class="animate__animated animate__fadeIn">
+          <ion-label> {{p.title}} </ion-label>
+            <p class="description-tag"> {{p.description}} , {{p.quantity}} </p> 
+              <p class="rate-tag"> {{p.rate}} </p> <span class="rating-tag"> {{p.rating}} </span>
+      </div>
+    </div>
+
+    <div>
+      <div *ngFor="let p of ProductDetails" style="width: 165px; height: auto; padding: 10px; border-radius: 10px; margin: 10px; background-color: #E0D8C4;">
+        <img [src]="p.image" alt="" class="animate__animated animate__fadeIn">
+          <ion-label> {{p.title}} </ion-label>
+            <p class="description-tag"> {{p.description}} , {{p.quantity}} </p> 
+              <p class="rate-tag"> {{p.rate}} </p> <span class="rating-tag"> {{p.rating}} </span>
+        </div>
+    </div>
+
+  </div>
+
+</ion-content>
